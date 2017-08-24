@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.lgcolor-bg {
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 500rem;
+  line-height: 20px;
+}

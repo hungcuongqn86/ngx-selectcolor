@@ -1,0 +1,28 @@
+{
+  "name": "ngx-selectcolor",
+  "version": "1.0.0",
+  "description": "Angular component for view and choose color",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungcuongqn86/ngx-selectcolor.git"
+  },
+  "keywords": [
+    "select",
+    "color",
+    "choose",
+    "angular"
+  ],
+  "author": "cuongnh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungcuongqn86/ngx-selectcolor/issues"
+  },
+  "homepage": "https://github.com/hungcuongqn86/ngx-selectcolor#readme",
+  "dependencies": {
+    "tinycolor2": "^1.4.1"
+  }
+}

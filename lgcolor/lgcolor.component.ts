@@ -12,6 +12,8 @@ export class LgcolorComponent implements OnInit {
   public color: any = '#fff';
   @Input('faclass')
   public faclass: any;
+  @Input('textcolor')
+  public textcolor: any;
   style: any;
 
   constructor() {
@@ -19,13 +21,14 @@ export class LgcolorComponent implements OnInit {
 
   ngOnInit() {
     const color = tinycolor(this.color);
-    const textcolor = color.isLight() ? '#000' : '#fff';
-    color.getLuminance();
+    if (!this.textcolor) {
+      this.textcolor = color.isLight() ? '#000' : '#fff';
+    }
     this.style = color.getLuminance() === 1 ?
       {
         'background-color': this.color,
-        'color': textcolor,
+        'color': this.textcolor,
         'box-shadow': 'inset 0 0 0 1px #777'
-      } : {'background-color': this.color, 'color': textcolor};
+      } : {'background-color': this.color, 'color': this.textcolor};
   }
 }
